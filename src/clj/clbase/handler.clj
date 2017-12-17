@@ -12,6 +12,6 @@
   (route/not-found "Page not found"))
 
 (defn -main
-  "Ring jetty webserver for a simple chat"
+  "Ring jetty webserver"
   [port]
   (jetty/run-jetty app {:port (Integer. port)}))
